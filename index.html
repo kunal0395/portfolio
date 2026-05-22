@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal Patil | Software Developer</title>
+  <meta name="description"
+    content="Kunal Patil - Software Developer portfolio with auto-synced GitHub projects, skills, certifications, and contact links." />
+  
+  <link rel="stylesheet" href="/assets/index.css">
+</head>
+
+<body class="bg-slate-950 text-slate-100 selection:bg-brand-500/30 selection:text-white">
+  <div class="fixed -left-24 top-10 h-80 w-80 rounded-full bg-brand-500/30 blur-3xl"></div>
+  <div class="fixed -right-20 bottom-10 h-80 w-80 rounded-full bg-cyan-400/20 blur-3xl"></div>
+
+  <header id="siteHeader"
+    class="sticky top-0 z-50 border-b border-slate-800/60 bg-slate-950/80 backdrop-blur-xl transition-all duration-200">
+    <nav class="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-3 lg:py-4">
+      <a href="#home"
+        class="shrink-0 rounded-full border border-transparent px-3 py-2 text-sm font-extrabold tracking-[0.14em] text-slate-100 transition hover:border-slate-700 hover:bg-slate-900/85 hover:text-white md:text-base lg:text-lg xl:text-xl">KUNAL
+        PATIL</a>
+      <button id="menuBtn" type="button"
+        class="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm font-semibold text-slate-100 transition duration-200 hover:border-slate-500 hover:bg-slate-800/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 lg:hidden"
+        aria-label="Toggle menu" aria-controls="mobileMenu" aria-expanded="false">
+        <span class="h-1.5 w-1.5 rounded-full bg-brand-400"></span>
+        Menu
+      </button>
+      <ul class="hidden items-center gap-1  lg:flex">
+        <li>
+          <a href="#home"
+            class="nav-link inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-semibold text-slate-300 transition duration-200 hover:-translate-y-0.5 hover:border-slate-500 hover:bg-slate-800/80 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Home</a>
+        </li>
+        <li>
+          <a href="#about"
+            class="nav-link inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-semibold text-slate-300 transition duration-200 hover:-translate-y-0.5 hover:border-slate-500 hover:bg-slate-800/80 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">About</a>
+        </li>
+        <li>
+          <a href="#skills"
+            class="nav-link inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-semibold text-slate-300 transition duration-200 hover:-translate-y-0.5 hover:border-slate-500 hover:bg-slate-800/80 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Skills</a>
+        </li>
+        <li>
+          <a href="#certifications"
+            class="nav-link inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-semibold text-slate-300 transition duration-200 hover:-translate-y-0.5 hover:border-slate-500 hover:bg-slate-800/80 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Certifications</a>
+        </li>
+        <li>
+          <a href="#projects"
+            class="nav-link inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-semibold text-slate-300 transition duration-200 hover:-translate-y-0.5 hover:border-slate-500 hover:bg-slate-800/80 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Projects</a>
+        </li>
+        <li>
+          <a href="#contact"
+            class="nav-link inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-semibold text-slate-300 transition duration-200 hover:-translate-y-0.5 hover:border-slate-500 hover:bg-slate-800/80 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mobileMenu" class="mx-auto hidden w-full max-w-6xl px-4 pb-4 lg:hidden">
+      <ul
+        class="space-y-2 rounded-2xl border border-slate-700 bg-slate-900/95 p-2 shadow-[0_12px_28px_rgba(2,6,23,0.45)]">
+        <li>
+          <a href="#home"
+            class="mobile-link block rounded-xl border border-transparent px-3 py-2.5 text-sm font-semibold text-slate-200 transition duration-200 hover:border-slate-600 hover:bg-slate-800/85 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Home</a>
+        </li>
+        <li>
+          <a href="#about"
+            class="mobile-link block rounded-xl border border-transparent px-3 py-2.5 text-sm font-semibold text-slate-200 transition duration-200 hover:border-slate-600 hover:bg-slate-800/85 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">About</a>
+        </li>
+        <li>
+          <a href="#skills"
+            class="mobile-link block rounded-xl border border-transparent px-3 py-2.5 text-sm font-semibold text-slate-200 transition duration-200 hover:border-slate-600 hover:bg-slate-800/85 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Skills</a>
+        </li>
+        <li>
+          <a href="#certifications"
+            class="mobile-link block rounded-xl border border-transparent px-3 py-2.5 text-sm font-semibold text-slate-200 transition duration-200 hover:border-slate-600 hover:bg-slate-800/85 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Certifications</a>
+        </li>
+        <li>
+          <a href="#projects"
+            class="mobile-link block rounded-xl border border-transparent px-3 py-2.5 text-sm font-semibold text-slate-200 transition duration-200 hover:border-slate-600 hover:bg-slate-800/85 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Projects</a>
+        </li>
+        <li>
+          <a href="#contact"
+            class="mobile-link block rounded-xl border border-transparent px-3 py-2.5 text-sm font-semibold text-slate-200 transition duration-200 hover:border-slate-600 hover:bg-slate-800/85 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="mx-auto w-full max-w-6xl px-4 pb-14 pt-14 md:pt-20">
+      <div class="grid items-center gap-8 lg:grid-cols-2">
+        <div class="reveal">
+          <div
+            class="inline-flex items-center gap-2 rounded-full border border-brand-300/40 bg-brand-500/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand-100">
+            <span class="h-2 w-2 rounded-full bg-emerald-300"></span>
+            Open to opportunities
+          </div>
+          <h1 class="mt-4 text-4xl font-black leading-tight text-white md:text-5xl">
+            Software Developer building
+            <span class="bg-gradient-to-r from-sky-300 via-cyan-300 to-violet-300 bg-clip-text text-transparent">modern
+              full-stack products</span>
+          </h1>
+          <p class="mt-4 max-w-xl text-slate-300">
+            I’m Kunal Patil, a Software Developer with experience in React.js,
+            Next.js, FastAPI, Node.js, and PostgreSQL. I build fast, scalable,
+            and user-friendly applications from idea to deployment.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects"
+              class="rounded-xl bg-gradient-to-r from-brand-500 to-cyan-400 px-5 py-3 text-sm font-bold text-slate-950 shadow-[0_10px_30px_rgba(6,182,212,0.12)] transition hover:-translate-y-0.5">View
+              Projects</a>
+            <a href="./assets/Kunal%20Resume.pdf"
+              class="rounded-xl border border-slate-600 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-slate-400">Download
+              Resume</a>
+          </div>
+          <ul class="mt-6 flex flex-wrap gap-4 text-sm font-semibold text-slate-300">
+            <li>
+              <a href="https://github.com/kunal0395" target="_blank" rel="noreferrer"
+                class="hover:text-white">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kunalpatil0395/" target="_blank" rel="noreferrer"
+                class="hover:text-white">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://www.hackerrank.com/profile/kp9503" target="_blank" rel="noreferrer"
+                class="hover:text-white">HackerRank</a>
+            </li>
+            <li>
+              <a href="https://leetcode.com/u/kunal0395/" target="_blank" rel="noreferrer"
+                class="hover:text-white">LeetCode</a>
+            </li>
+          </ul>
+        </div>
+
+        <article class="reveal overflow-hidden rounded-3xl border border-slate-700 bg-slate-900/70 shadow-2xl">
+          <img src="/assets/business-2717063_1920-59a44ccc.jpg" alt="Developer workspace" class="h-72 w-full object-cover" />
+          <div class="space-y-2 p-5">
+            <h2 class="text-lg font-bold text-white">Software Developer</h2>
+            <p class="text-sm text-slate-300">
+              Hands-on with REST APIs, JWT auth, database optimization, workflow
+              automation, and production-ready UI engineering.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="mx-auto w-full max-w-6xl px-4 py-12">
+      <h2 class="text-3xl font-extrabold text-white md:text-4xl">About Me</h2>
+      <p class="mt-3 max-w-3xl text-slate-300">
+        I enjoy solving real problems with clean architecture and thoughtful UX.
+        Across internships and projects, I’ve delivered measurable improvements
+        like reducing invalid requests and improving query performance.
+      </p>
+      <div class="mt-8 grid gap-4 lg:grid-cols-[290px_1fr]">
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-4">
+          <img src="/assets/pic-29854990.jpg" alt="Kunal Patil" class="h-72 w-full rounded-2xl object-cover" />
+          <h3 class="mt-4 text-lg font-bold text-white">Kunal Patil</h3>
+          <p class="text-sm text-slate-300">Software Developer • Full-Stack</p>
+        </article>
+
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+          <p class="text-slate-200">
+            Software Developer with experience building production-ready web
+            applications using React.js, Next.js, FastAPI, Node.js, and
+            PostgreSQL. Worked on REST APIs, authentication, and automation
+            workflows using n8n and LLM APIs.
+          </p>
+          <div class="mt-5 grid gap-3 sm:grid-cols-3">
+            <div class="rounded-2xl border border-slate-700 bg-slate-900 p-4">
+              <p class="text-2xl font-black text-white">40%</p>
+              <p class="text-xs text-slate-400">Fewer invalid requests</p>
+            </div>
+            <div class="rounded-2xl border border-slate-700 bg-slate-900 p-4">
+              <p class="text-2xl font-black text-white">60%</p>
+              <p class="text-xs text-slate-400">Faster query response</p>
+            </div>
+            <div class="rounded-2xl border border-slate-700 bg-slate-900 p-4">
+              <p class="text-2xl font-black text-white">50+</p>
+              <p class="text-xs text-slate-400">UI components delivered</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="mx-auto w-full max-w-6xl px-4 py-12">
+      <h2 class="text-3xl font-extrabold text-white md:text-4xl">Skills</h2>
+      <p class="mt-3 max-w-3xl text-slate-300">
+        Core stack and tools from your Software Developer resume.
+      </p>
+      <div class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-bold text-white">Languages</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">Python</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">JavaScript</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">SQL</span>
+          </div>
+        </article>
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-bold text-white">Frontend</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">React.js</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">Next.js</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">Tailwind
+              CSS</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">HTML5</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">CSS3</span>
+          </div>
+        </article>
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-bold text-white">Backend</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">Node.js</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">Express.js</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">FastAPI</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">Flask</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">JWT
+              Auth</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">REST
+              APIs</span>
+          </div>
+        </article>
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-bold text-white">Databases</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">PostgreSQL</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">MongoDB</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">MySQL</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">NoSQL</span>
+          </div>
+        </article>
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-bold text-white">Tools</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">Git</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">GitHub</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">Postman</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">VS
+              Code</span>
+          </div>
+        </article>
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-bold text-white">Automation & AI</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">n8n</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">Twilio</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">ElevenLabs</span>
+            <span
+              class="inline-flex items-center rounded-full border border-slate-600 bg-slate-800/80 px-3 py-1 text-xs font-semibold text-slate-200">LLM
+              APIs</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="mx-auto w-full max-w-6xl px-4 py-12">
+      <h2 class="text-3xl font-extrabold text-white md:text-4xl">Certifications & Achievements</h2>
+      <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-bold text-white">Decode Python with DSA</h3>
+          <p class="mt-2 text-sm text-slate-300">
+            PW Skills certification covering Python and Data Structures &
+            Algorithms.
+          </p>
+        </article>
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-bold text-white">HackerRank SQL Silver Badge</h3>
+          <p class="mt-2 text-sm text-slate-300">Achieved Silver level in SQL.</p>
+          <a href="https://www.hackerrank.com/profile/kp9503" target="_blank" rel="noreferrer"
+            class="mt-3 inline-block text-sm font-semibold text-cyan-300 hover:text-cyan-200">View HackerRank Profile
+            ↗</a>
+        </article>
+        <article class="reveal rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-bold text-white">LeetCode Biweekly 177</h3>
+          <p class="mt-2 text-sm text-slate-300">Secured Global Rank 1827.</p>
+          <a href="https://leetcode.com/u/kunal0395/" target="_blank" rel="noreferrer"
+            class="mt-3 inline-block text-sm font-semibold text-cyan-300 hover:text-cyan-200">View LeetCode Profile
+            ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="mx-auto w-full max-w-6xl px-4 py-12">
+      <h2 class="text-3xl font-extrabold text-white md:text-4xl">Auto-Synced GitHub Projects</h2>
+      <p class="mt-3 max-w-3xl text-slate-300">
+        Projects are fetched directly from GitHub. Each card shows project
+        name and project link; live link appears only when available.
+      </p>
+
+      <div
+        class="reveal mt-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-slate-700 bg-slate-900/70 p-4">
+        <p id="projectsStatus" class="text-sm text-slate-300">
+          Loading projects from GitHub...
+        </p>
+        <button id="refreshProjectsBtn" type="button"
+          class="rounded-xl border border-slate-600 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:border-slate-400">
+          Refresh Projects
+        </button>
+      </div>
+
+      <div id="projectsGrid" class="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3" aria-live="polite"></div>
+    </section>
+
+    <section id="contact" class="mx-auto w-full max-w-6xl px-4 py-12 pb-16">
+      <h2 class="text-3xl font-extrabold text-white md:text-4xl">Contact</h2>
+      <p class="mt-3 max-w-3xl text-slate-300">
+        I’m available for Software Developer and Full-Stack roles.
+      </p>
+      <article
+        class="reveal mt-7 grid gap-5 rounded-3xl border border-slate-700 bg-gradient-to-r from-brand-500/20 to-cyan-400/10 p-6 md:grid-cols-[1fr_auto] md:items-center">
+        <div>
+          <h3 class="text-lg font-bold text-white">Let’s build something great</h3>
+          <div class="mt-3 flex flex-wrap gap-2 text-sm">
+            <a href="mailto:kunalp0395@gmail.com"
+              class="rounded-full border border-slate-500 px-3 py-1.5 text-slate-100 hover:bg-slate-800/70">kunalp0395@gmail.com</a>
+            <a href="https://www.linkedin.com/in/kunalpatil0395/" target="_blank" rel="noreferrer"
+              class="rounded-full border border-slate-500 px-3 py-1.5 text-slate-100 hover:bg-slate-800/70">LinkedIn</a>
+            <a href="https://github.com/kunal0395" target="_blank" rel="noreferrer"
+              class="rounded-full border border-slate-500 px-3 py-1.5 text-slate-100 hover:bg-slate-800/70">GitHub</a>
+            <a href="./assets/Kunal%20Resume.pdf"
+              class="rounded-full border border-slate-500 px-3 py-1.5 text-slate-100 hover:bg-slate-800/70">Resume</a>
+          </div>
+        </div>
+        <a href="mailto:kunalp0395@gmail.com"
+          class="rounded-xl bg-slate-100 px-5 py-3 text-center text-sm font-bold text-slate-950 transition hover:bg-white">Start
+          Conversation</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 py-6">
+    <p class="text-center text-sm text-slate-400">
+      © <span id="year"></span> Kunal Patil • Software Developer
+    </p>
+  </footer>
+
+  <script>
+    const GITHUB_USERNAME = "kunal0395";
+    const MAX_PROJECTS = 12;
+    const EXCLUDED_REPOS = new Set([]);
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.querySelectorAll(".nav-link");
+    const mobileLinks = document.querySelectorAll(".mobile-link");
+    const sections = document.querySelectorAll("main section");
+    const header = document.getElementById("siteHeader");
+    const revealTargets = document.querySelectorAll(".reveal");
+
+    const projectsGrid = document.getElementById("projectsGrid");
+    const projectsStatus = document.getElementById("projectsStatus");
+    const refreshProjectsBtn = document.getElementById("refreshProjectsBtn");
+    const PROJECTS_CACHE_KEY = `portfolio-projects-cache:${GITHUB_USERNAME}`;
+    const desktopNavActiveClasses = [
+      "text-white",
+      "border-brand-300/60",
+      "bg-gradient-to-r",
+      "from-brand-500/30",
+      "to-cyan-400/20",
+      "shadow-[0_8px_20px_rgba(51,143,255,0.22)]",
+    ];
+    const mobileNavActiveClasses = [
+      "text-white",
+      "border-brand-300/60",
+      "bg-brand-500/20",
+    ];
+
+    const escapeHtml = (value = "") =>
+      value.replace(
+        /[&<>"']/g,
+        (char) =>
+        ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;",
+        }[char])
+      );
+
+    const formatRepoName = (name) =>
+      name
+        .replace(/[-_]+/g, " ")
+        .replace(/\b\w/g, (char) => char.toUpperCase());
+
+    const normalizeUrl = (url) => {
+      if (!url) return null;
+      const value = url.trim();
+      if (!value) return null;
+      if (/^https?:\/\//i.test(value)) return value;
+      return `https://${value}`;
+    };
+
+    const liveUrlFromRepo = (repo) => {
+      const homepage = normalizeUrl(repo.homepage);
+      if (homepage) return homepage;
+      if (repo.has_pages) return `https://${GITHUB_USERNAME}.github.io/${repo.name}/`;
+      return null;
+    };
+
+    const formatDate = (dateText) =>
+      new Date(dateText).toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      });
+
+    const setProjectsStatus = (text, isError = false) => {
+      projectsStatus.textContent = text;
+      projectsStatus.classList.toggle("text-rose-300", isError);
+      projectsStatus.classList.toggle("text-slate-300", !isError);
+    };
+
+    const saveProjectsCache = (repos) => {
+      try {
+        localStorage.setItem(
+          PROJECTS_CACHE_KEY,
+          JSON.stringify({
+            repos,
+            cachedAt: new Date().toISOString(),
+          })
+        );
+      } catch (error) {
+        // Ignore cache write failures (storage disabled/full).
+      }
+    };
+
+    const readProjectsCache = () => {
+      try {
+        const raw = localStorage.getItem(PROJECTS_CACHE_KEY);
+        if (!raw) return null;
+        const parsed = JSON.parse(raw);
+        if (!Array.isArray(parsed?.repos) || !parsed.repos.length) return null;
+        return {
+          repos: parsed.repos,
+          cachedAt: parsed.cachedAt || null,
+        };
+      } catch (error) {
+        return null;
+      }
+    };
+
+    const renderProjects = (repos) => {
+      projectsGrid.innerHTML = repos.map(createProjectCard).join("");
+    };
+
+    const formatCacheTime = (isoText) => {
+      if (!isoText) return "an earlier session";
+      const date = new Date(isoText);
+      if (Number.isNaN(date.getTime())) return "an earlier session";
+      return date.toLocaleString("en-US", {
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+    };
+
+    const renderSkeletons = (count = 6) => {
+      projectsGrid.innerHTML = Array.from({ length: count })
+        .map(
+          () => `
+            <article class="animate-pulse rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+              <div class="h-4 w-3/4 rounded bg-slate-700"></div>
+              <div class="mt-3 h-3 w-1/3 rounded bg-slate-800"></div>
+              <div class="mt-4 h-3 w-full rounded bg-slate-800"></div>
+              <div class="mt-2 h-3 w-5/6 rounded bg-slate-800"></div>
+            </article>
+          `
+        )
+        .join("");
+    };
+
+    const createProjectCard = (repo) => {
+      const description = repo.description
+        ? escapeHtml(repo.description)
+        : "No description provided yet.";
+      const language = repo.language ? escapeHtml(repo.language) : "General";
+      const liveUrl = liveUrlFromRepo(repo);
+
+      return `
+          <article class="rounded-3xl border border-slate-700 bg-slate-900/70 p-5">
+            <h3 class="text-lg font-bold text-white">${escapeHtml(formatRepoName(repo.name))}</h3>
+            <p class="mt-1 text-xs text-slate-400">Updated ${formatDate(repo.pushed_at)} • ${language}</p>
+            <p class="mt-3 text-sm text-slate-300">${description}</p>
+            <div class="mt-4 flex flex-wrap gap-3 text-sm font-semibold">
+              <a href="${repo.html_url}" target="_blank" rel="noreferrer" class="text-cyan-300 hover:text-cyan-200">Project Link ↗</a>
+              ${liveUrl
+          ? `<a href="${liveUrl}" target="_blank" rel="noreferrer" class="text-cyan-300 hover:text-cyan-200">Live Link ↗</a>`
+          : ""
+        }
+            </div>
+          </article>
+        `;
+    };
+
+    const renderEmptyState = (message) => {
+      projectsGrid.innerHTML = `
+          <article class="rounded-3xl border border-slate-700 bg-slate-900/70 p-5 sm:col-span-2 xl:col-span-3">
+            <h3 class="text-lg font-bold text-white">No projects found</h3>
+            <p class="mt-2 text-sm text-slate-300">${escapeHtml(message)}</p>
+          </article>
+        `;
+    };
+
+    const loadProjectsFromGitHub = async () => {
+      const cachedProjects = readProjectsCache();
+      if (cachedProjects) {
+        renderProjects(cachedProjects.repos);
+      } else {
+        renderSkeletons();
+      }
+
+      setProjectsStatus(
+        cachedProjects
+          ? `Showing cached projects while syncing latest from @${GITHUB_USERNAME}...`
+          : `Syncing repositories from @${GITHUB_USERNAME}...`
+      );
+      refreshProjectsBtn.disabled = true;
+
+      try {
+        const endpoint = `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100&_=${Date.now()}`;
+        const response = await fetch(endpoint, {
+          headers: { Accept: "application/vnd.github+json" },
+        });
+
+        if (!response.ok) {
+          let message = `GitHub API error: ${response.status}`;
+          if (response.status === 403) {
+            message = "GitHub API rate limit reached. Please try again after a few minutes.";
+          }
+          throw new Error(message);
+        }
+
+        const repos = await response.json();
+        const filtered = repos
+          .filter((repo) => !repo.fork && !repo.archived && !EXCLUDED_REPOS.has(repo.name))
+          .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+          .slice(0, MAX_PROJECTS);
+
+        if (!filtered.length) {
+          renderEmptyState("Add public repositories to GitHub and refresh.");
+          setProjectsStatus("No public repositories available to display.");
+          return;
+        }
+
+        renderProjects(filtered);
+        saveProjectsCache(filtered);
+        const syncedAt = new Date().toLocaleTimeString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+        setProjectsStatus(
+          `Showing ${filtered.length} repositories from @${GITHUB_USERNAME}. Last sync: ${syncedAt}.`
+        );
+      } catch (error) {
+        if (cachedProjects) {
+          renderProjects(cachedProjects.repos);
+          setProjectsStatus(
+            `${error.message || "Failed to fetch projects."} Showing cached projects from ${formatCacheTime(
+              cachedProjects.cachedAt
+            )}.`
+          );
+        } else {
+          renderEmptyState(
+            "Could not fetch projects right now. Please refresh or check your network."
+          );
+          setProjectsStatus(error.message || "Failed to fetch projects.", true);
+        }
+      } finally {
+        refreshProjectsBtn.disabled = false;
+      }
+    };
+
+    const setHeaderState = () => {
+      header.classList.toggle("bg-slate-950/95", window.scrollY > 8);
+      header.classList.toggle("shadow-[0_12px_30px_rgba(2,6,23,0.5)]", window.scrollY > 8);
+    };
+
+    const setActiveSectionLink = () => {
+      let current = "home";
+      sections.forEach((section) => {
+        const top = section.offsetTop - 130;
+        const bottom = top + section.offsetHeight;
+        if (window.scrollY >= top && window.scrollY < bottom) {
+          current = section.id;
+        }
+      });
+
+      navLinks.forEach((link) => {
+        const active = link.getAttribute("href") === `#${current}`;
+        desktopNavActiveClasses.forEach((className) => {
+          link.classList.toggle(className, active);
+        });
+      });
+
+      mobileLinks.forEach((link) => {
+        const active = link.getAttribute("href") === `#${current}`;
+        mobileNavActiveClasses.forEach((className) => {
+          link.classList.toggle(className, active);
+        });
+      });
+    };
+
+    menuBtn.addEventListener("click", () => {
+      const isOpen = !mobileMenu.classList.contains("hidden");
+      mobileMenu.classList.toggle("hidden", isOpen);
+      menuBtn.setAttribute("aria-expanded", String(!isOpen));
+    });
+
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      const clickedOutsideMenu =
+        !mobileMenu.contains(event.target) && !menuBtn.contains(event.target);
+      if (clickedOutsideMenu) {
+        mobileMenu.classList.add("hidden");
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "opacity-100",
+              "translate-y-0",
+              "transition",
+              "duration-500"
+            );
+            entry.target.classList.remove("opacity-0", "translate-y-4");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    revealTargets.forEach((element) => {
+      element.classList.add("opacity-0", "translate-y-4");
+      observer.observe(element);
+    });
+
+    refreshProjectsBtn.addEventListener("click", loadProjectsFromGitHub);
+    document.getElementById("year").textContent = new Date().getFullYear();
+    setHeaderState();
+    setActiveSectionLink();
+    loadProjectsFromGitHub();
+
+    window.addEventListener("scroll", () => {
+      setHeaderState();
+      setActiveSectionLink();
+    });
+  </script>
+</body>
+
+</html>
